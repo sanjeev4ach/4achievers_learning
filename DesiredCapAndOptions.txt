@@ -1,0 +1,49 @@
+Desired Capabilities is a class in Selenium used to set properties of browsers to perform cross browser testing 
+of web applications. It stores the capabilities as key-value pairs and these capabilities are used to set browser
+properties like browser name, browser version, path of browser driver in the system, etc. to determine the behaviour of browser at run time.
+
+Desired capability can also be used to configure the driver instance of Selenium WebDriver.
+We can configure driver instance like FirefoxDriver, ChromeDriver, InternetExplorerDriver by using desired capabilities.
+
+
+Use when we need to run cases on a remote machine then we use desiredCapabilities
+
+It’s a huge challenge for QA engineers to roll out robust web-applications that provide a seamless user experience across a variety of devices. 
+Considering a large number of devices and browsers in the market, QAs need to test web-applications in different environments to ensure they meet market 
+requirements.
+
+These environments include different mobile devices, web-browsers, emulators, or simulators. 
+To use the desired environment, QAs use DesiredCapabilities in test automation frameworks like Selenium. 
+it helps QAs test web-apps for cross browser compatibility testing across multiple devices and platforms.
+
+DesiredCapabilities are a set of key-value pairs encoded as a JSON object. 
+It helps QAs define basic test requirements such as operating systems, browser combinations, browser versions, etc. within Selenium test scripts. 
+The DesiredCapabilities Class has multiple methods that let QAs specify the required properties regarding the desired test environments.
+
+One can quickly refer to the GitHub library for Desired Capabilities to understand all the available methods.
+
+
+
+Why do we need Desired Capabilities?
+
+1. Desired Capabilities are needed because every Testing scenario should be executed on some specific testing environment. 
+2. The testing environment can be a web browser, Mobile device, mobile emulator, mobile simulator, etc. 
+3. The Desired Capabilities Class helps us to tell the webdriver, which environment we are going to use in our test script.
+
+4. Each specific test case needs to be executed in a different environment (browser, mobile, or an operating system) as per the market trends. 
+For example, a QA might need to test a Web-application on two different browsers (Chrome, Safari) installed on mobile devices running on different operating systems (Android, iOS).
+This is where Desired Capabilities enables QAs to instruct the Selenium WebDriver regarding the environment to be used while performing the tests. 
+Using the setCapabilities method from the DesiredCapabilities class, QAs can execute parallel tests on desired devices, browsers, and operating systems available on a Cloud Selenium Grid.
+
+
+
+Desired Capabilities are more useful in cases like:
+
+In mobile application automation, where the browser properties and the device properties can be set.
+In Selenium grid when we want to run the test cases on a different browser with different operating systems and versions.
+
+
+reference - 
+
+https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/remote/DesiredCapabilities.html#DesiredCapabilities--
+https://www.selenium.dev/documentation/legacy/desired_capabilities/

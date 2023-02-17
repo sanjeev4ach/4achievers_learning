@@ -1,0 +1,54 @@
+Selenium - 
+
+1. Set Of APIs and it supports Browser/web based applications
+2. Runs all across browsers
+3. Open Source
+4. Doesn't have any such repository
+5. It takes less system resources to run test cases as it supports windows as well as Linux.
+6. You can write your script in any language which supports OOPS concepts 
+7. Struggle to automate SAP based, Salesforce or mainframe application
+
+
+QTP(Quick Test Professional)/UFT(Unified Functional Testing) - 
+
+1. Desktop application support as well
+2. Supports only Windows
+3. Licensed
+4. Comes with a built in repository
+5. Require more system resources as it supports windows OS
+6. Only supports VBScript 
+7. Supports every major applications Orcale, SalesForce, ServiceNow
+
+
+
+Selenium before or till 3.8 - REST Protocol (JSON WIRE Protocol)
+
+
+1. Java
+2. Chrome Browswer has to be installed in your system
+3. chromedrivers, geckodriver, iedriver => binaries  => https://chromedriver.chromium.org/
+4. Selenium Server Standalone jar 3.8, 3.6, 4.6 => https://www.selenium.dev/downloads/
+
+
+Right Click on Project and click on Build Path -> Configure Build path -> Libraries tab -> click on Add External Jars -> Select the required jar -> Click on Apply and Close
+
+
+package selenium_course;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class First_Day_Script {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C://New folder/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		
+		
+	}
+
+}
+
+
+
